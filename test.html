@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+        <script src="test.js"></script>
+    </head>
+    <body ng-app="app" ng-controller="myController">
+        <div>TODO write content</div>
+        <table>
+            <tr ng-repeat="x in list">
+                <td>{{x.name}}</td>
+                <td > <input type="date" ng-model="date1[$index]" /></td>
+                <td > <input type="date" ng-model="date2[$index]" /></td>
+            </tr>
+        </table>
+        <input type="button" value="Show obj" ng-click="show_list()" />
+    </body>
+</html>
